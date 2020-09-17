@@ -1,7 +1,6 @@
 body {
 	background-color:#A1FFA9;
-	zoom: -3; 
-	-moz-transform: scale(-3); 
+	-moz-transform: scale(-6); 
 	-moz-transform-origin: 0 0;
 }
 .sidenav {
