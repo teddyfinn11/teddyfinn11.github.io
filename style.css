@@ -1,0 +1,187 @@
+body {
+	background-color:#A1FFA9;
+}
+.sidenav {
+	height: 99.35%;
+	width: 250px;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: #00ff17;
+	overflow-x: hidden;
+	padding-top: 20px;
+}
+.sidenav a {
+	padding: 6px 8px 6px 16px;
+	text-decoration: none;
+	font-size: 25px;
+	color: #111;
+	display: block;
+}
+.sidenav a:hover {
+	color: blue;
+	background-color: White;
+}
+.main {
+	margin-left: 250px;
+	padding: 0px 70px;
+}
+@media screen and (max-height: 450px) {
+	.sidenav {padding-top: 15px;}
+	.sidenav a {font-size: 18px;}
+}
+/*Side nav code by w3 schools. However I do understan the principle*/
+h1 {
+	text-align:center;
+	font-size:50px;
+}
+p {
+	font-size:24px;
+	word-wrap: normal;
+}
+h2 {
+	text-align:center;
+	word-wrap: normal;
+}
+.game_link img {
+	height:90px;
+	width:90px;
+}
+h3{
+	font-size:30px;
+}
+.wip {
+	color:grey;
+}
+.game_link a {
+	text-decoration: none;
+	color: black;
+}
+.game_link {
+	background-color:c7ffcc;
+	border-style:solid;
+}
+
+#update {
+	width:500px;
+	background-color:c7ffcc;
+	border-style:solid;
+	text-align:left;
+}
+.record {
+	width:500px;
+	background-color:c7ffcc;
+	border-style:solid;
+}
+.record p {
+	padding: 0px 0px 0px 16px;
+}
+.left_half {
+	width:50%;
+}
+.right_half {
+	width:50%;
+	height:75%;
+	float:right;
+	border-style:solid;
+}
+.award {
+	height:75px;
+	padding:8px 5px 5px 5px;
+}
+/*Base tooltip code by w3 schools*/
+/*I have changed some things*/
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: fff;
+  color: black;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  border-style:solid;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+.tooltip2 {
+  position: relative;
+  display: inline-block;
+}
+.tooltip2 .tooltiptext2 {
+  visibility: hidden;
+  width: 120px;
+  background-color: fff;
+  color: black;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  border-style:solid;
+  right:85px;
+}
+
+.tooltip2:hover .tooltiptext2 {
+  visibility: visible;
+}
+.collapsible {
+  background-color: #00ff17;
+  cursor: pointer;
+  padding:3px 3px 3px 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: white;
+  color: blue;
+}
+
+/* Code sourced from w3 schools */
+.content {
+  display: none;
+  overflow: hidden;
+  background-color: #00ff17;
+}
+.sidenav_frame {
+	height: 99.35%;
+	width: 250px;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	overflow-x: hidden;
+	border-style:solid;
+	color:black;
+	border-width:3px;
+}
+.not_link {
+	color: 454545;
+	text-decoration: underline;
+	font-size: 15;
+	padding: 0px 238px 0px 238px;
+}
+.link {
+	color: blue;
+	text-decoration: underline;
+	font-size: 15;
+	padding: 0px 238px 0px 238px;
+}
+.link:hover {
+	background-color: white;
+}
+.not_link:hover {
+	background-color: white;
+}

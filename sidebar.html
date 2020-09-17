@@ -1,0 +1,54 @@
+<html>
+<head>
+<base target="_parent">
+<meta name="author" content="Finn Mortensen">
+<link rel="stylesheet" type="text/css" href="style.css">
+<title>Sidebar</title>
+</head>
+<body>
+<div class="sidenav">
+  <a href="index.html">About.</a>
+  <br>
+  <a href="games.html">Games.</a>
+  <button type="button" class="collapsible">Show</button>
+<div class="content">
+<ul>
+  <li><a href="1945.html">1945.</a></li>
+  <li><a href="TWP.html">Thinking with puzzles.</a></li>
+  <li><a href="temptation.html">Temptation.</a></li>
+  <li><a href="snake_fight.html">Snake fight.</a></li>
+  <li><a href="not_avalible.html">War.<br>(Not available)</a></li>
+  <li><a href="not_avalible.html">Rise of Finn.<br>(Not available)</a></li>
+  <li><a href="not_avalible.html">Conquest.<br>(Not available)</a></li>
+  </ul>
+</div>
+  <br>
+  <br>
+  <a href="wt.html">Walk throughs.</a>
+  <br>
+  <a href="records.html">Records.</a>
+  <a href="awards.html">Awards.</a>
+<br>
+  <a href="https://discord.gg/Shfu5BJ" target="_blank">Discord.</a>
+  <a href="tools.html">Developer's tools.</a>
+  <a href="updates.html">Updates.</a>
+  <br>
+</div>
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+</body>
+</html>
