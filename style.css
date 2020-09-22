@@ -188,3 +188,10 @@ h3{
 .not_link:hover {
 	background-color: white;
 }
+.hidden {
+visibility: hidden;
+}
+.popup {
+z-index: 9;
+visibility: visible;
+}
