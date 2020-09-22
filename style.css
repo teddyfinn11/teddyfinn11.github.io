@@ -190,6 +190,7 @@ h3{
 }
 .hidden {
 visibility: hidden;
+z-index: 9;
 }
 .popup {
 z-index: 9;
