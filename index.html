@@ -3,12 +3,23 @@
 <meta name="author" content="Finn Mortensen">
 <link rel="stylesheet" type="text/css" href="style.css">
 <title>About Nova Games</title>
+  <script>
+    function popup() {
+    document.getElementById("popup").classList.remove('hidden');
+    document.getElementById("popup").classList.add('popup');
+    }
+  </script>
 </head>
 <body>
   <img src="WEBD.png" align="right" height="64px" usemap="#WEBD">
   <map name="WEBD">
     <area shape="rect" coords="16, 12, 36, 48" href="index.html">
   </map>
+<div id="popup" class="hidden">
+  <p>
+    test
+  </p>
+</div>
 <iframe src="sidebar.html" class="sidenav_frame"></iframe>
 <div class="main">
 <center><img src="banner-1.png" width="50%"></center>
