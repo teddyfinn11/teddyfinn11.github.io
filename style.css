@@ -191,10 +191,10 @@ h3{
 .hidden {
 position: absolute;
 visibility: hidden;
-z-index: 9;
+z-index: 9999;
 }
 .popup {
 position: absolute;
-z-index: 9;
+z-index: 9999;
 visibility: visible;
 }
