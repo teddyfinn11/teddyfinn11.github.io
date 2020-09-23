@@ -189,10 +189,12 @@ h3{
 	background-color: white;
 }
 .hidden {
+position: absolute;
 visibility: hidden;
 z-index: 9;
 }
 .popup {
+position: absolute;
 z-index: 9;
 visibility: visible;
 }
