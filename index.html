@@ -6,6 +6,7 @@
 <script type="text/javascript">
 function popup() {
 	document.getElementById("popup").className = "popup";
+	document.getElementById("darken").className = "darken";
 }
   </script>
 </head>
@@ -14,6 +15,9 @@ function popup() {
   <map name="WEBD">
     <area shape="rect" coords="16, 12, 36, 48" onclick="popup()">
   </map>
+<div id="darken" class="hidden">
+<img src="black.png">
+</div>
 <div id="popup" class="hidden">
   <p>
     <img src="card-front.png">
