@@ -198,3 +198,8 @@ position: fixed;
 z-index: 9999;
 visibility: visible;
 }
+.darken {
+position: fixed;
+z-index: 999;
+visibility: visible;
+}
