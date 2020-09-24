@@ -203,3 +203,7 @@ position: fixed;
 z-index: 999;
 visibility: visible;
 }
+.dark_image {
+width: 100vw;
+height: 100vh;
+}
