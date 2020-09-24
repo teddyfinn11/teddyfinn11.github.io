@@ -8,6 +8,10 @@ function popup() {
 	document.getElementById("popup").className = "popup";
 	document.getElementById("darken").className = "darken";
 }
+function hide() {
+	document.getElementById("popup").className = "hidden";
+	document.getElementById("darken").className = "hidden";
+}
   </script>
 </head>
 <body>
@@ -23,6 +27,7 @@ function popup() {
 <img src="black.png" height="100%" width="100%" class="dark_image">
 </div>
 <div id="popup" class="hidden">
+<img src="close_button.png" onclick="hide()">
 <img src="card-front.png">
 </div>
 
