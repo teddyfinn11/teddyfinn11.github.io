@@ -204,8 +204,8 @@ z-index: 999;
 visibility: visible;
 }
 .dark_image {
-width: 200vw;
-height: 200vh;
+width: 100vw;
+height: 100vh;
 width: calc(100% + 20px);
 margin-left: -10px;
 }
