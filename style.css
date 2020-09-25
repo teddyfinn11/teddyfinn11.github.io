@@ -206,10 +206,10 @@ visibility: visible;
 .dark_image {
 width: 200vw;
 height: 200vh;
+width: calc(100% + 20px);
+margin-left: -10px;
 }
 #close_button {
 top: -5px;
 right: -5px;
-width: calc(100% + 20px);
-margin-left: -10px;
 }
