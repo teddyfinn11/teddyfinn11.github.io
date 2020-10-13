@@ -2,7 +2,7 @@ body {
 	background-color:#e5d1ff;
 	border: 30px solid transparent;
 	padding: 15px;
-	border-image: url(border.png) 30 stretch;
+	border-image: url(border.png) 40 stretch;
 	margin: 0;
 }
 .left_half {
