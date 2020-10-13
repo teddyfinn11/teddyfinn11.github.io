@@ -1,0 +1,23 @@
+<html>
+<head>
+<title>Card1</title>
+<meta name="author" content="Finn Mortensen">
+<link rel="stylesheet" type="text/css" href="style2.css">
+<script>
+function swap_image(img_id, new_src) {
+document.getElementById(img_id).src = new_src;
+}
+</script>
+</head>
+<div align="left">
+<body background="color:#e3e3e3">
+<img id="card" src="card-front.png" height="100%" style="float:left; padding: 0px 15px 0px 0px;" onclick="swap_image('card', 'card1.png')">
+</div>
+<div align="right">
+<div align="left">
+<h1 align="center" style="font-size:60px;">Welcome to the Inner circle.</h1>
+<h2 align="center" style="font-size:30px;">Click the card to turn it over.</h2>
+</div>
+</div>
+</body>
+</html>
