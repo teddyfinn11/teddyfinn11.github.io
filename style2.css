@@ -1,0 +1,19 @@
+body {
+	background-color:#e5d1ff;
+	border: 30px solid transparent;
+	padding: 15px;
+	border-image: url(border.png) 40 stretch;
+	margin: 0;
+}
+.left_half {
+	float: left;
+	width: 49%;
+	height: 100%;
+	border-style: solid;
+}
+.right_half {
+	float: right;
+	width: 49%;
+	height: 100%;
+	border-style: solid;
+}
