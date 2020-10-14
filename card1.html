@@ -14,7 +14,7 @@ document.getElementById(obj_id).className = 'shown';
 </head>
 <body background="color:#e3e3e3">
 <div align="left">
-<button id="button1" class="hidden" onclick="show('text1');">Yes</button>
+<button id="button1" class="hidden" onclick="show('text1'); hide('button1'); hide('button2');">Yes</button>
 <button id="button2" class="hidden" onclick="">No</button>
 <img id="card2" src="card1.png" style="float:left; padding: 0px 15px 0px 0px;" class="hidden">
 <img id="card1" src="card-front.png" height="100%" style="float:left; padding: 0px 15px 0px 0px;" onclick="show('card2'); hide('card1'); show('button1'); show('button2');">
