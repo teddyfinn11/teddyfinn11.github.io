@@ -32,12 +32,20 @@ body {
 #button1 {
 	left: 100px;
 	background: #5c591e;
+	top: 370px;
+	position: absolute;
+	height: 100px;
+	width: 135px;
+	z-index: 1;
+	border-style: solid;
+	border-color: black;
+	border-radius: 5px;
+	font-family: lucida calligraphy;
+	font-size: 37px;
 }
 #button2 {
 	left: 235px;
 	background: #82261e;
-}
-button {
 	top: 370px;
 	position: absolute;
 	height: 100px;
