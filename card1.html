@@ -25,7 +25,7 @@ start = 0;
 </head>
 <body background="color:#e3e3e3">
 <div align="left">
-<button id="button1" class="hidden" onclick="show('text1'); hide('button1'); hide('button2'); hide('card2'); show('card1');">Yes</button>
+<button id="button1" class="hidden" onclick="show('text1'); hide('button1'); hide('button2'); hide('card2'); show('card1'); hide('turn_over');">Yes</button>
 <button id="button2" class="hidden" onclick="window.location.replace('index.html');">No</button>
 <img id="card2" src="card1.png" style="float:left; padding: 0px 15px 0px 0px;" class="hidden">
 <img id="card1" src="card-front.png" height="100%" style="float:left; padding: 0px 15px 0px 0px;" onclick="card1();">
@@ -33,14 +33,14 @@ start = 0;
 <div align="right">
 <div align="left">
 <h1 align="center" style="font-size:50px;">Welcome to the Inner circle.</h1>
-<h2 align="center" style="font-size:20px;">Click the card to turn it over.</h2>
+<h2 align="center" style="font-size:20px;" id="turn_over">Click the card to turn it over.</h2>
 <div id="text1" class="hidden">
 <br>
 <h3 align="center">
 First steps.
 </h3>
-<p>
-You have accepted the invitation to 'the hunt'. To begin with, you must solve this puzzle.
+<p class="raise">
+You have accepted the invitation to 'The hunt'. To begin with, you must solve this puzzle.
 </p>
 </div>
 </div>
