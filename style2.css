@@ -49,3 +49,6 @@ button {
 	font-family: lucida calligraphy;
 	font-size: 37px;
 }
+.raise {
+	z-index: 1;
+}
