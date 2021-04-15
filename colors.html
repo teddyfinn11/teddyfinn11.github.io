@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Colors test</title>
+
+<style>
+#box {
+	position: absolute;
+	height: 60px;
+	width: 60px;
+	left: calc(50% - 30px);
+	top: calc(50% - 30px);
+}
+#color {
+	position: absolute;
+	width: 300px;
+	height: 300px;
+	border-style: solid;
+	left: calc(50% - 150px);
+	top: calc(50% - 150px);
+}
+.hidden {
+	visibility: hidden;
+}
+#button {
+	position: absolute;
+	height: 30px;
+	width: 50px;
+	left: calc(50% - 25px);
+	top: calc(50% - 30px);
+}
+#button2 {
+	position: absolute;
+	height: 30px;
+	width: 50px;
+	left: calc(50% - 25px);
+	top: 50%;
+}
+</style>
+<script>
+function start() {
+	document.getElementById('box').className = 'hidden';
+	var text = document.getElementById('button2').value;
+	num = Number(text);
+	sessionStorage.setItem("num", num);
+	var loop = setInterval(next_color, 1000);
+}
+var colors = ["blue", "red", "lime", "blue", "yellow", "blue", "red",
+"blue", "lime", "blue", "lime", "yellow", "blue", "yellow", "red"];
+var i = 0
+function next_color() {
+	if (i < num) {
+		document.getElementById('color').style.backgroundColor = colors[i];
+		i = i + 1;
+	}
+	else {
+		window.location.replace("page2.html");
+	}
+}
+</script>
+
+</head>
+<body>
+
+<div id="color">
+<div id="box">
+<button id="button" onclick="start();">Start</button>
+<select id="button2">
+<option value="5">5</option>
+<option value="10">10</option>
+<option value="15">15</option>
+</select>
+</div>
+</div>
+
+</body>
+</html>

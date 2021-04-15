@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Colors test</title>
+
+<style>
+#select div{
+	width: 200px;
+	height: 200px;
+	border-style: solid;
+#select div div {
+	border-style: none;
+	border-width: 0;
+}
+}
+#select {
+	width: 412px;
+	height: 412px;
+	border-style: solid;
+    display: grid;
+    grid-template-columns: 0fr 0fr;
+    grid-template-rows: 0fr 0fr;
+	position: absolute;
+	left: calc(50% - 207px);
+	top: calc(50% - 215px);
+	background-color: black;
+}
+#red {
+	background-color: red;
+}
+#green {
+	background-color: lime;
+}
+#blue {
+	background-color: blue;
+}
+#yellow {
+	background-color: yellow;
+}
+#button {
+	position: absolute;
+	height: 30px;
+	width: 50px;
+	left: calc(50% - 22px);
+	top: calc(50% + 205px);
+}
+#select div:hover {
+	opacity: 0.7;
+}
+#bar div {
+	display: inline-block;
+	margin: 2px;
+}
+#bar div div {
+	width: 15px;
+	height: 15px;
+	border-style: solid;
+	border-width: 2px;
+}
+.no div {
+	background-color: #dbdbdb;
+	background-image: url(lock.png);
+	background-size: 15px;
+}
+.show {
+	background-color: white;
+}
+.white {
+	background-color: white;
+}
+.r {
+	background-color: red;
+}
+.g {
+	background-color: lime;
+}
+.b {
+	background-color: blue;
+}
+.y {
+	background-color: yellow;
+}
+</style>
+<script>
+var num = sessionStorage.getItem("num");
+
+function start() {
+	if (num < 15) {
+		document.getElementById("num15").className = "no";
+	}
+	if (num < 10) {
+		document.getElementById("num10").className = "no";
+	}
+}
+
+var pos = 1;
+function add(color) {
+	document.getElementById("n"+pos).className = color;
+	pos = pos + 1;
+}
+window.onload = start;
+var i = 1;
+function save() {
+	var colors = "brgbybrbgbgybyr";
+	var loops = Number(num) + 1;
+	var data = "";
+	for (i = 1; i < loops; i++) {
+		data = data + document.getElementById('n'+i).className;
+	}
+	var x;
+	var count = 0;
+	for (x in data) {
+		if (data[x] == colors[x]) {
+			count++;
+		}
+		else {
+			break;
+		}
+	}
+	data = data.split('').join(' ');
+	data = data + "\nb r g b y";
+	if (num >= 10) {
+		data = data + " b r b g b";
+	}
+	if (num == 15) {
+		data = data + " g y b y r"
+	}
+	var stats = count/num*100+"%";
+	data = data + "\n"+stats;
+	data = data + "\n"+prompt("Please enter your name.");
+	var newLink = document.createElement('a');
+	newLink.download = "data.txt";
+	var textToBLOB = new Blob([data], { type: 'text/plain' });
+	if (window.webkitURL != null) {
+		newLink.href = window.webkitURL.createObjectURL(textToBLOB);
+	}
+	else {
+		newLink.href = window.URL.createObjectURL(textToBLOB);
+		newLink.style.display = "none";
+		document.body.appendChild(newLink);
+	}
+	newLink.click();
+}
+</script>
+
+</head>
+<body>
+
+<a href="colors.html"><button>Back.</button></a>
+
+<!--Top bar.-->
+<center>
+<div id="bar">
+<div id="num5">
+<div id="n1"></div><div id="n2"></div><div id="n3"></div><div id="n4"></div><div id="n5"></div>
+</div>
+<div id="num10">
+<div id="n6"></div><div id="n7"></div><div id="n8"></div><div id="n9"></div><div id="n10"></div>
+</div>
+<div id="num15" class="show">
+<div id="n11"></div><div id="n12"></div><div id="n13"></div><div id="n14"></div><div id="n15"></div>
+</div>
+</div>
+</center>
+
+<!--Color panels.-->
+<div id="select">
+<div id="red" onclick="add('r');"></div>
+<div id="green" onclick="add('g');"></div>
+<div id="blue" onclick="add('b');"></div>
+<div id="yellow" onclick="add('y');"></div>
+</div>
+
+<button id="button" onclick="save();">Done</button>
+
+</body>
+</html>
